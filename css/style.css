@@ -1,36 +1,47 @@
 
 .about {
-	max-width: 360px;
-	background: rgba(255,255,255,.5);
+	max-width: 320px;
+	background: #000;
 	height: calc(100vh - 120px);
-	border-radius: 15px;
+	border-radius: 30px;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 /*	-webkit-box-shadow: 0px 15px 30px -15px rgba(174,174,192,1);
     -moz-box-shadow: 0px 15px 30px -15px rgba(174,174,192,1);
     box-shadow: 0px 15px 30px -15px rgba(174,174,192,1);*/
-    margin: 60px 0 60px 60px;
+    margin: 60px 0;
     box-shadow: 0 1px 0 0 #d3d9de,0 0 0 1px #e7e8ec;
-
-
+    float: right;
 }
 
 .about .head {
 	display: flex;
-	padding: 15px;
+	padding: 30px;
+	position: relative;
+}
+
+.about .head:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	background: url(../img/head.svg) no-repeat;
 }
 
 .about .head .container-img {
-	width: 80px;
-	height: 80px;
-	border-radius: 15px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
 	overflow: hidden;
 	margin-right: 15px;
 	position: relative;
-	-webkit-box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);
+	/*-webkit-box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);
 	-moz-box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);
-	box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);
+	box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);*/
 	z-index: 10;
 
 }
@@ -51,22 +62,32 @@
 	font-weight: 600;
 	font-size: 22px;
 	line-height: 28px;
-	color: #000000;
+	color: #fff;
 }
 
 .about .head .specialty {
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000000;
+	color: #929292;
 }
 
 .about .about-container {
 	background: #fff;
-	padding: 15px;
+	padding: 30px;
 	height: 100%;
-	border-radius: 15px;
+	border-radius: 30px;
+	z-index: 10;
+}
+
+.links .title {
+	font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 15px;
 }
 
 .about .link {
@@ -79,14 +100,14 @@
 	height: 40px;
 	background-color: #24292E;
 	margin-right: 15px;
-	border-radius: 12px;
+	border-radius: 14px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0px 10px 15px -5px rgb(195 195 195);
 }
 
-.about .link .container-img.green {
+/*.about .link .container-img.green {
 	background-color: #59bd59;
 }
 
@@ -100,7 +121,7 @@
 
 .about .link .container-img.grey {
 	background-color: #24292E;
-}
+}*/
 
 .about .link .container-img img {
 	width: 18px;
@@ -126,21 +147,27 @@
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	color: #1652FE;
+	color:  #757575;
+	text-decoration: none;
+	transition: .2s ease-out;
+}
+
+.about .link .text a:hover {
+	color: #000;
 }
 
 .about hr {
 	margin: 20px 0;
 }
 
-.about .tags:not(:last-of-type) {
-	margin-bottom: 20px;
+.about .tags {
+	margin-bottom: 25px;
 }
 
 .about .tags .title {
 	font-style: normal;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 18px;
 	color: #000000;
 	margin-bottom: 15px;
@@ -157,27 +184,20 @@
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 14px;
-	color: #000000;
-
+	color: #000;
 	background-color: #edeef0;
-	border-radius: 4px;
+	border-radius: 15px;
 	width: auto;
-	margin-right: 7px;
-	margin-bottom: 7px;
-	padding: 2px 8px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 4px 8px;
 	transition: .2s ease-out;
-	box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #e7e8ec;
 	cursor: default;
 }
 
 .about .tags .tag:hover {
-	background: #fff;
+	background: #f5f5f5;
 }
-
-
-
-
-
 
 
 .projects {
@@ -216,7 +236,32 @@
 	width: 100%;
 	overflow: hidden;
 	border-radius: 15px 15px 0 0;
+	position: relative;
 }
+
+.arrows {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	z-index: 999!important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	opacity: 0;
+	transition: .2s ease-out;
+}
+
+.arrows svg {
+	cursor: pointer;
+	z-index: 999!important;
+}
+
+.projects .item .container-img:hover .arrows {
+	opacity: 1;
+}
+
 
 .projects .item .container-img img {
 	width: 100%;
@@ -246,4 +291,200 @@ a.btn-more {
 
 a.btn-more:hover {
 	transform: scale(1.07);
+}
+
+
+
+
+/* Styles for dialog window */
+.zoom-anim-dialog {
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 600px;
+	margin: -100px auto 0;
+	position: relative;
+	border-radius: 15px;
+}
+
+.zoom-anim-dialog:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	backdrop-filter: blur(10px);
+	background: rgba(255,255,255,.6);
+	z-index: -1;
+	border-radius: 15px;
+}
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.7;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+.languages {
+	display: grid;
+	grid-row: 3fr;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+
+.languages > div {
+	flex: 1;
+	border-radius: 15px;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	cursor: default;
+	transition: .2s ease-out;
+}
+
+.languages > div:hover {
+	transform: scale(1.05);
+	    box-shadow: 0px 10px 15px -10px rgb(0 0 0 / 40%);
+}
+
+.languages > div img {
+	max-height: 30px;
+	margin-bottom: 10px;
+}
+
+.html {
+	grid-column: 1 / 2;
+	background-color: #F0EDEA;
+}
+
+.css {
+	grid-column: 2 / 3;
+	background-color: #e6def0;
+}
+
+.js {
+	grid-column: 3 / 4;
+	background-color: #c1dedc;
 }

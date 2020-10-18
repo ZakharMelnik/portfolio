@@ -1,10 +1,48 @@
-<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M11.8516 1.42105C11.8516 2.53139 11.6782 3.61894 11.3381 4.64969C11.1647 5.15274 11.2983 5.724 11.6356 6.05462L13.1789 8.0981C11.9274 10.4428 10.4277 11.9435 8.10001 13.1779L6.10485 11.6763C5.72685 11.2983 5.17357 11.1628 4.65537 11.3248C3.618 11.6678 2.52948 11.8421 1.42105 11.8421C0.637565 11.8421 0 12.4797 0 13.2631L0 16.5789C0 17.3624 0.637565 18 1.42105 18C10.5622 18 18 10.5622 18 1.42105C18 0.637566 17.3624 0 16.5789 0L13.2726 0C12.4892 0 11.8516 0.637566 11.8516 1.42105Z" fill="white"/>
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
+<g xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<rect x="106.667" y="106.67" width="298.67" height="234.67" fill="#ffffff" data-original="#000000" style=""/>
+	</g>
 </g>
-<defs>
-<clipPath id="clip0">
-<rect width="18" height="18" fill="white" transform="translate(0 18) rotate(-90)"/>
-</clipPath>
-</defs>
-</svg>
+<g xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<path d="M362.664,0H149.33c-23.531,0-42.667,19.136-42.667,42.667V64H405.33V42.667C405.33,19.136,386.194,0,362.664,0z" fill="#ffffff" data-original="#000000" style=""/>
+	</g>
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<path d="M106.664,384v85.333c0,23.531,19.136,42.667,42.667,42.667h213.333c23.531,0,42.667-19.136,42.667-42.667V384H106.664z     M255.997,469.333c-11.776,0-21.333-9.557-21.333-21.333s9.557-21.333,21.333-21.333S277.33,436.224,277.33,448    S267.773,469.333,255.997,469.333z" fill="#ffffff" data-original="#000000" style=""/>
+	</g>
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+</g></svg>
