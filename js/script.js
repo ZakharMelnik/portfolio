@@ -26,6 +26,13 @@ $(document).ready(function() {
 			removalDelay: 300,
 			mainClass: 'my-mfp-zoom-in'
 		});
+
+		
+
+		$(".btn-portfolio").click(function(){
+			$(".projects").css("display", "block");
+			$(".about").css("display", "none");
+		});
 });
 
 

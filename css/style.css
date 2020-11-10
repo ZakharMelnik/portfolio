@@ -2,7 +2,7 @@
 .about {
 	max-width: 320px;
 	background: #000;
-	height: calc(100vh - 120px);
+
 	border-radius: 30px;
 	display: flex;
 	flex-direction: column;
@@ -43,11 +43,14 @@
 	-moz-box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);
 	box-shadow: 0px 15px 30px -5px rgba(174,174,192,1);*/
 	z-index: 10;
+	border: 1px solid #fff;
+	padding: 2px;
 
 }
 
 .about .head .container-img img {
 	width: 100%;
+	border-radius: 50%;
 }
 
 .about .head .text {
@@ -487,4 +490,19 @@ a.btn-more:hover {
 .js {
 	grid-column: 3 / 4;
 	background-color: #c1dedc;
+}
+
+.btn-portfolio {
+	background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 10px;
+    transition: .2s ease-out;
+    display: none;
+    text-align: center;
+}
+
+.btn-container {
+	
 }
