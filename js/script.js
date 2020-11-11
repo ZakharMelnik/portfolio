@@ -27,11 +27,33 @@ $(document).ready(function() {
 			mainClass: 'my-mfp-zoom-in'
 		});
 
-		
+		$(function() {
 
-		$(".btn-portfolio").click(function(){
-			$(".projects").css("display", "block");
-			$(".about").css("display", "none");
+		    let filter = $("[data-filter]");
+
+		    filter.on("click", function(event) {
+		        event.preventDefault();
+
+		        let cat = $(this).data('filter');
+
+		        if(cat == 'all') {
+		            $("[data-cat]").removeClass("hide");
+		        } else {
+		            $("[data-cat]").each(function() {
+		                let workCat = $(this).data('cat');
+
+		                if(workCat != cat) {
+		                    $(this).addClass('hide');
+		                } else {
+		                    $(this).removeClass('hide');
+		                }
+		            });
+		        }
+		    });
+		});
+
+		$(".filter a").click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
 		});
 });
 
@@ -53,3 +75,6 @@ var typed = new Typed(".dynamic-text span", {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
+
+
+
