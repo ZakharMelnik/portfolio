@@ -52,6 +52,23 @@
 		padding: 10px;
 	}
 
+	.about .link .text {
+		display: none;
+	}
+
+	.about .links {
+		display: flex;
+		justify-content: center;
+	}
+
+	.about .link:last-child .container-img {
+		margin-right: 0;
+	}
+
+	.links .title {
+		display: none;
+	}
+
 }
 
 @media (max-width: 480px) {

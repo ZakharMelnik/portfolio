@@ -149,7 +149,7 @@
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	color:  #757575;
+	color:  #505050;
 	text-decoration: none;
 	transition: .2s ease-out;
 }
@@ -170,6 +170,14 @@
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+
+.about .tags .descr {
+	font-style: normal;
+	font-size: 16px;
 	line-height: 18px;
 	color: #000000;
 	margin-bottom: 15px;
@@ -467,12 +475,18 @@ a.btn-more:hover {
 .languages > div {
 	flex: 1;
 	border-radius: 15px;
-	padding: 15px;
+	padding: 15px 7px;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: center;
 	cursor: default;
 	transition: .2s ease-out;
+	background: #000000;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
 }
 
 .languages > div:hover {
@@ -481,7 +495,7 @@ a.btn-more:hover {
 }
 
 .languages > div img {
-	max-height: 30px;
+	height: 30px;
 	margin-bottom: 10px;
 }
 
@@ -509,10 +523,6 @@ a.btn-more:hover {
     transition: .2s ease-out;
     display: none;
     text-align: center;
-}
-
-.btn-container {
-
 }
 
 .item {
