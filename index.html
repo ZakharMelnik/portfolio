@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col-xl-3 col-lg-4 col-md-6 p-0">
         <div class="about">
-          <div class="head">
+          <div class="head rellax" data-rellax-speed="-2">
             <div class="container-img"><img src="img/1.jpg" alt=""></div>
             <div class="text">
               <div class="name">Zahar Melnik</div>
@@ -34,9 +34,10 @@
 
           <div class="about-container">
 
-            <div class="tags">
+            <section>
               <div class="title">Skills and other</div>
               <div class="descr">Click to see more details</div>
+
               <div class="container-tags">
                 <div class="languages">
                   <div class="html"><img src="img/html.svg" alt="">HTML5</div>
@@ -49,17 +50,10 @@
                   <div class="css"><img src="img/programs.svg" alt="">Programs</div>
                   <div class="js"><img src="img/devices.svg" alt="">Devices</div>
                 </div>
-
-                <div class="tag">Experience</div>
-                <div class="tag">about me</div>
-                <div class="tag">CSS Grid</div>
-                <div class="tag">jQuery</div>
-                <div class="tag">Google Analytics</div>
-                <div class="tag">Git</div>
               </div>
-            </div>
+            </section>
 
-            <div class="links">
+            <section class="links">
               <div class="title">Contacts</div>
               <div class="link">
                 <a href="tel:+380954850960" target="_blank" class="container-img green"><img src="img/links/phone.svg"
@@ -93,25 +87,50 @@
                   <a href="https://github.com/ZakharMelnik" target="_blank">github.com/ZakharMelnik</a>
                 </div>
               </div>
+            </section>
+
+            <!-- <a href="#" class="btn">About me</a> -->
+            <a href="#" class="btn-portfolio">Portfolio</a>
+
+            <div class="popup">
+              <div class="banner">
+                <img src="img/html.svg" alt="">
+                HTML5
+              </div>
+              <div class="descr">
+                framework Vue.js, <br>
+                Bootstrap(only grid or full set of tools),<br>
+                accordions, dropdowns,<br>
+                pop-ups(magnific-popup which includes: modal, form, video, lightbox, gallery, map),<br>
+                sliders(slick, swiper),<br>
+                lightboxes(fancybox3),<br>
+                Parallax(rellax.js),<br>
+                Tooltips(popper.js),<br>
+                charts(chart.js),<br>
+                animation(animate.css, animation when scrolling - wow.js, AOS library),<br>
+                email form(php script for sending a letter to the mail),<br>
+                browser support(last 10 versions).
+              </div>
             </div>
-
-            <a href="portfolio.html" class="btn-portfolio">Portfolio</a>
-
-
 
           </div>
 
+          <div class="bg"></div>
+
         </div>
       </div>
+
       <div class="col-xl-9 col-lg-8 col-md-6 p-0">
         <div class="block projects">
 
-          <div class="title">Check out my works</div>
+          <div class="banner">
+            <div class="title">Check out my works</div>
 
-          <div class="filter">
-            <a href="#" class="active" id="all" data-filter="all">All</a>
-            <a href="#" id="" data-filter="promotion">Promotion</a>
-            <a href="#" id="" data-filter="landing">Landing</a>
+            <div class="filter">
+              <a href="#" class="active" id="all" data-filter="all">All</a>
+              <a href="#" id="" data-filter="promotion">Promotion</a>
+              <a href="#" id="" data-filter="landing">Landing</a>
+            </div>
           </div>
 
           <div class="row">
@@ -227,6 +246,7 @@
   <script src="js/jquery.magnific-popup.js"></script>
   <script src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+  <script src="js/rellax.min.js"></script>
 
 
 </body>
@@ -236,14 +256,17 @@
 
 
 <!-- 
-  HTML5
-    Vue.js, Bootstrap || &-grid, pop-ups (magnific-popup), sliders(slick, swiper), lightboxes(fancybox), carousels, accordions, animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script)
-  CSS3
-    preprocessor SASS/SCSS, specification FlexBox and CSS Grid, Adaptive layout(media queries), css animation(@keyframes), optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format 
-  JS
-    JQuery, Waypoints(trigger a function when you scroll to an element), 
-  Gulp
-    The collector provides automatic converting of fonts, compression of images, adding prefixes, merging and minimizing files
-  Git
-  .htaccess (for caching files and remove .html in the site address)
+<div class="descr">Why is it worth working with me? You can work for a long time, but you can work
+                quickly. I am a professional and I do it quickly without losing quality. <br><br>
+
+                My goal is to create a website that will display well on any device without overloading the system. The
+                client wants to go to the site and get the result he needs without wasting extra time.<br><br>
+
+                I have taken theoretical web developer courses from
+                Glo Academy, studied documentation, followed trends. I practiced in a young and energetic team, where
+                the main goal is to show the desired result within the specified time frame. After a long collaboration,
+                I took up freelancing and continued to improve my skills. Behind my shoulders is a wide variety of sites
+                of different specifics, different levels of complexity and volume.<br><br>
+
+                So why aren't we working together yet?</div>
  -->
