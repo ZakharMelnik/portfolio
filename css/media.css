@@ -12,7 +12,7 @@
 
 @media (max-width: 520px) {
 	body {
-		background: linear-gradient(#000000 50%, #ffffff);
+		background: #000);
 	}
 	.about {
 		max-width: 100%;
